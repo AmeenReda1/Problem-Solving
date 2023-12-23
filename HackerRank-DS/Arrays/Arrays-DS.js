@@ -31,8 +31,18 @@ function readLine() {
 
 function reverseArray(a) {
     // Write your code here
+    let l=0
+    let r=a.length-1
+    let temp=0
+    while(l<r){
+        temp=a[r]
+        a[r]=a[l]
+        a[l]=temp
+        r--
+        l++
+    }
+    return a
     
-    return a.reverse()
 }
 
 function main() {
