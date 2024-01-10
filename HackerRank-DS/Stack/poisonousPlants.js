@@ -14,7 +14,6 @@ function splitToLists(p){
             else{
                 temp.push(p[i])
             }
-
         }
     }
     if(temp.length>0){
@@ -40,20 +39,15 @@ function mergeLists(lists){
                 }
                 resultList.pop()
                 resultList.push(copyLast)  
-            }
-            
+            }     
             else{
                 if(currentList.length==1){
                     resultList.push([currentList])
                 }
                 else{
                     resultList.push(currentList)
-                }
-                
+                }    
             }
-
-
-
         }
     }
     return resultList
@@ -69,8 +63,10 @@ function poisonousPlants(p) {
         }
         days++
         lists=mergeLists(lists)
-          
     }
     return days
-
 }
+
+l =[6,5,8,4,7,9]
+let res=poisonousPlants(l)
+console.log(res)
