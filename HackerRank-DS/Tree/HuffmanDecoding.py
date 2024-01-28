@@ -33,7 +33,8 @@ def huffman_hidden():#builds the tree and returns root
         q.put((obj.freq, obj.data, obj ))
         
     root = q.get()
-    root = root[2]#contains root object
+    root = root[2]
+    #contains root object
     return root
 
 def dfs_hidden(obj, already):
