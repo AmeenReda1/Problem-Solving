@@ -13,6 +13,6 @@ function bubbleSort(arr){
     return arr
 }
 function swap(arr,i,j){
-    return [arr[i],arr[j]]=[arr[j],arr[i]]
+    return [arr[i],arr[j]] = [arr[j],arr[i]]
 }
 console.log(bubbleSort([10,5,6,8,12,3]))

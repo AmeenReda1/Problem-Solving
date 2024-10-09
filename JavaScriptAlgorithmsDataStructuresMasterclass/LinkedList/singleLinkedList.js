@@ -106,9 +106,9 @@ class SinglyLinkedList{
         if(index == 0) return this.shift();
         if(index == this.length-1) return this.pop()
 
-        var previuosNode=this.get(index-1)
-        var removedNode=previuosNode.next
-        previuosNode.next=removedNode.next
+        var previousNode=this.get(index-1)
+        var removedNode = previousNode.next
+        previousNode.next=removedNode.next
         this.length--;
         return removedNode
     }
